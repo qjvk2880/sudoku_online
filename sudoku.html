@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
     <title>Sudoku</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="/public/style.css" rel="stylesheet">
     
 </head>
 <body>
 
 <div class="import">
-    <input type="text" name="import_string" value="080100007000070960026900130000290304960000082502047000013009840097020000600003070" />
+    <input type="text" name="import_string" value="000200950081600000700050006904013860208009710000082000030000001400900200805000600" />
     <br />
     <button id="import">Import</button>
-    <!--
-    <button id="solve">Solve</button>
-    <input type="checkbox" value="1" name="hints" /> Show Hints
-    -->
+    
 </div>
 
-<form>
+<form action="/result">
     <table id="sudoku" class="sudoku">
     </table>
     <input type="submit" id="submit">
 </form>
-
-<script src = "sudoku.js"></script>
+<h1><time>00:00:00</time></h1>
+<button id="strt">start</button>
+<button id="stp">stop</button>
+<button id="rst">reset</button>
+<script src = "/public/sudoku.js"></script>
+<!-- <script src = "public/sudoku.js"></script> -->
 </body>
 </html>
