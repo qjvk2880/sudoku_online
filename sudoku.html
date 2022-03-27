@@ -17,13 +17,16 @@
 <form action="/result">
     <table id="sudoku" class="sudoku">
     </table>
+    <input type="text" id= "name" placeholder="이름을 입력하세요" name="name">
     <input type="submit" id="submit">
+    <input type="hidden" id= "hrs" name="hrs" value="">
+    <input type="hidden" id= "min" name="min" value="">
+    <input type="hidden" id= "sec" name="sec" value="">
 </form>
 <h1><time>00:00:00</time></h1>
-<button id="strt">start</button>
-<button id="stp">stop</button>
-<button id="rst">reset</button>
+
 <script src = "/public/sudoku.js"></script>
+<script src = "/public/timer.js"></script>
 <!-- <script src = "public/sudoku.js"></script> -->
 </body>
 </html>

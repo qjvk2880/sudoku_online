@@ -1,7 +1,7 @@
 var h1 = document.getElementsByTagName('h1')[0];
-var start = document.getElementById('strt');
-var stop = document.getElementById('stp');
-var reset = document.getElementById('rst');
+var hrs_input = document.getElementById('hrs');
+var min_input = document.getElementById('min');
+var sec_input = document.getElementById('sec');
 var sec = 0;
 var min = 0;
 var hrs = 0;
@@ -22,7 +22,10 @@ function add() {
     tick();
     h1.textContent = (hrs > 9 ? hrs : "0" + hrs) 
         	 + ":" + (min > 9 ? min : "0" + min)
-       		 + ":" + (sec > 9 ? sec : "0" + sec);
+        + ":" + (sec > 9 ? sec : "0" + sec);
+    hrs_input.value = hrs;
+    min_input.value = min;
+    sec_input.value = sec;
     timer();
 }
 function timer() {
@@ -30,11 +33,3 @@ function timer() {
 }
 
 timer();
-start.onclick = timer;
-stop.onclick = function() {
-    clearTimeout(t);
-}
-reset.onclick = function() {
-    h1.textContent = "00:00:00";
-    seconds = 0; minutes = 0; hours = 0;
-}

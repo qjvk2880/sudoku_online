@@ -31,17 +31,3 @@ import_button.addEventListener("click", function (e) {
   sudoku_html += "</tbody>";
   document.getElementsByClassName("sudoku")[0].innerHTML = sudoku_html;
 });
-
-// submit_button.addEventListener("click", function (e) {
-//   var sudoku_table = document.getElementById("sudoku");
-//   var sudoku_input = Array.from(sudoku_table.getElementsByTagName("input"));
-//   var input_length = sudoku_input.length;
-//   var submit_string = import_string;
-//   for (var i = 0; i < input_length; i++) {
-//     var column = Number(sudoku_input[i].parentNode.className);
-//     var row = Number(sudoku_input[i].parentNode.parentNode.className);
-//     var value = sudoku_input[i].value;
-//     submit_string = replaceAt(submit_string, 9 * row + column, value);
-//   }
-//   alert(submit_string);
-// });
