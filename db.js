@@ -3,7 +3,7 @@ var db = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "alsdnr12",
-  database: "opentutorials",
+  database: "sudoku_online",
 });
 
 db.connect();
